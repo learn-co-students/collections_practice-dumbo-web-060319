@@ -32,7 +32,14 @@ def swap_elements_from_to(arr, from, to)
     arr
 end
 
-
 def reverse_array(arr)
     arr.reverse
 end
+
+def kesha_maker(arr)
+    arr.map do |word| 
+        word_arr = word.split("")
+        word_arr[2] = "$"
+        word = word_arr.join("")
+    end
+end 
