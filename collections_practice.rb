@@ -30,10 +30,8 @@ def swap_elements_from_to(arr, from, to)
     arr[to] = one_place
     
     arr
-    binding.pry
 end
 
-swap_elements_from_to(["cat", "am", "I", "."], 1, 2)
 
 def reverse_arr
 
