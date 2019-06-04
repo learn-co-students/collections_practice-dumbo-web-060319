@@ -51,3 +51,13 @@ end
 def sum_array(arr)
     arr.inject{ |sum, num| sum += num }
 end
+
+def add_s(arr)
+    arr.map do |word|
+        if arr[1] != word
+            word += "s"
+        else
+            word
+        end
+    end
+end
