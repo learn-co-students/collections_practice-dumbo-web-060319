@@ -15,12 +15,26 @@ end
 def swap_elements(arr)
     second_place = arr[1]
     third_place = arr[2]
-
     arr[1] = third_place
     arr[2] = second_place
-    # binding.pry
-    puts arr
+    
     arr
 end
 
-# element_swap(["a", "b", "c"])
+def swap_elements_from_to(arr, from, to)
+    return "Invalid Input(s)" if from.class != Integer || to.class != Integer || arr.class != Array
+
+    one_place = arr[from]
+    another_place = arr[to]
+    arr[from] = another_place
+    arr[to] = one_place
+    
+    arr
+    binding.pry
+end
+
+swap_elements_from_to(["cat", "am", "I", "."], 1, 2)
+
+def reverse_arr
+
+end
