@@ -43,3 +43,7 @@ def kesha_maker(arr)
         word = word_arr.join("")
     end
 end 
+
+def find_a(arr)
+    arr.select{|word| word.start_with?("a")}
+end
